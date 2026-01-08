@@ -9,7 +9,7 @@ const urlschema = new mongoose.Schema({
     redirectURL:{
         type:String,
         required:true,
-        unique:true
+      
     },
     visitHistory:[{timestamp:{type:Number}}]
 },{
@@ -17,5 +17,6 @@ const urlschema = new mongoose.Schema({
 })
 
 const URLmodel = mongoose.model('URL',urlschema)
+
 
 module.exports = URLmodel
